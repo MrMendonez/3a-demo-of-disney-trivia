@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disney Trivia</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1>Disney Trivia</h1>
+    <p>Answer the three trivia questions correct to win the game! You only get three chances or you lose!</p>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" class="text-center">
+    <h2 id="show-player-name" class="inline"></h2>&nbsp;&nbsp;&nbsp;&nbsp;
+    <h3 class="inline">Score: <span id="score">0</span></h3>&nbsp;&nbsp;&nbsp;&nbsp;
+    <h3 class="inline"> Tries left: <span id="tries-left">3</span></h3>
+  </div>
+
+  <!-- Name Form -->
+  <div id="name-screen" class="container">
+    <h3>Type in your name to begin.</h3>
+    <form class="form-inline">
+      <div class="form-group">
+        <input id="player-name" type="text" class="form-control" placeholder="Jane Doe">
+      </div>
+      <button id="player-name-btn" type="submit" class="btn btn-primary">Start</button>
+    </form>
+  </div>
+
+  <!-- Question 1 -->
+  <div id="question1" class="container">
+    <h3>1. What is the name of the dragon in Mulan?</h3>
+    <form class="form-inline">
+      <div class="form-group">
+        <input id="question1-input" type="text" class="form-control">
+      </div>
+      <button id="question1-btn" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Game Messages -->
+  <h3 id="correct-msg">You are correct!</h3>
+  <h3 id="incorrect-msg">That is not correct!</h3>
+
+ 
+ <!-- jQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
